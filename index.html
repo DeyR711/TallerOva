@@ -76,9 +76,9 @@
         margin: 0 0 0 0;
       }
       #adicional h2 {
-        font-size: 1.4em;
-        font-weight: bold;
-        margin-bottom: 18px;
+        text-align: center;
+        margin-top: 8px;
+        margin-bottom: 20px;
       }
       #adicional h3 {
         font-size: 1.1em;
@@ -229,6 +229,39 @@
         top: 0;
         z-index: 1000;
       }
+
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        filter: invert(1) brightness(0.2);
+      }
+
+      .banner-contacto-img {
+        width: 100%;
+        max-height: 220px;
+        object-fit: cover;
+        filter: grayscale(0.2) brightness(0.95);
+        border-radius: 15px;
+      }
+      .banner-contacto-text {
+        background: rgba(30,30,30,0.85);
+        color: #fff;
+        font-size: 2rem;
+        font-family: 'Montserrat', Arial, sans-serif;
+        padding: 0.5rem 2rem;
+        border-radius: 10px;
+        letter-spacing: 1px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        display: inline-block;
+      }
+
+      .aside-img-personal {
+        display: block;
+        margin: 8px auto 20px auto;
+        border-radius: 5px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+        max-width: 220px;
+        width: 100%;
+      }
     </style>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
@@ -366,6 +399,9 @@
           </article>
         </section>
         <aside id="adicional">
+          <figure>
+            <img src="img/D7.JPG" alt="Foto personal" class="aside-img-personal">
+          </figure>
           <h2>Formación Académica</h2>
           <article>
             <h3>Primaria</h3>
@@ -386,6 +422,18 @@
       </div>
       </section>
     </main>
+    <div class="container my-4">
+      <div class="row justify-content-center">
+        <div class="col-12 position-relative">
+          <img src="img/banner.png" alt="Banner principal" class="img-fluid rounded shadow banner-contacto-img">
+          <div class="position-absolute top-50 start-50 translate-middle w-100 text-center">
+            <span class="banner-contacto-text">
+              Información de contacto
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
     <footer>
       <div id="pie-logo-2">
         <div class="derechos">
